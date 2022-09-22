@@ -63,7 +63,7 @@ if ($input = getenv('POPCLIP_TEXT')) {
   $carry ='';
   foreach($json[0] as $item){
     if (isset($item[0])) {
-      $item[0] = str_replace(["\r\n", "\r", "\n"],'',$item[0]);
+      $item[0] = str_replace(["\r\n", "\r", "\n", "//"],'',$item[0]);
       $carry .= $item[0];
     }
   }
