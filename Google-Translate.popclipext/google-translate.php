@@ -40,6 +40,7 @@ function googleTrans($q, $tl) {
   curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
   curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 2);
   curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 2);
+  curl_setopt($ch, CURLOPT_SSL_VERIFYPEER,FALSE);
   curl_setopt($ch, CURLOPT_PROXY, '127.0.0.1:1087');
   curl_setopt($ch, CURLOPT_PROXYTYPE, 'CURLPORXY_HTTP');
 
